@@ -1,0 +1,43 @@
+/*
+Theme Name: Mon theme enfant
+Template: bakes-and-cakes
+ */
+
+/*-----Width----*/
+.L-max { width: 100% }
+.L-2 { width: 90% }
+.L-3 { width: 80% }
+.L-4 { width: 70% }
+.L-5 { width: 60% }
+.L-6 { width: 50% }
+.L-7 { width: 40% }
+.L-8 { width: 30% }
+.L-9 { width: 20% }
+.L-10 { width: 10% }
+
+/*----float---*/
+.float-l { float: left }
+
+/*------------------------Header------------------------*/
+.site-branding { text-align: initial }
+.site-branding .site-title { font-size: 50px }
+/*-----Social------*/
+.widget-title { display: none}
+.site-social .footer-t { margin: 0 0 30px }
+.site-social .widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-social .widget .social-networks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+.site-social .widget .social-networks li {
+    float: right;
+    margin-right: 19px;
+}
+.site-social .widget a { color: #f6a8c6 }
+.svg-inline--fa { margin-top: 1em }
