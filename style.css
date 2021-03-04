@@ -21,6 +21,9 @@ Template: bakes-and-cakes
 /*------------------------Header------------------------*/
 .site-branding { text-align: initial }
 .site-branding .site-title { font-size: 50px }
+.site-branding .site-title a {
+    color:  #FA8079;
+}
 /*-----Social------*/
 .widget-title { display: none}
 .site-social .footer-t { margin: 0 0 30px }
@@ -39,5 +42,56 @@ Template: bakes-and-cakes
     float: right;
     margin-right: 19px;
 }
-.site-social .widget a { color: #f6a8c6 }
+.site-social .widget a { color: #FA8079}
 .svg-inline--fa { margin-top: 1em }
+
+/*navbar*/
+.main-navigation .current_page_item>a, .main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current-menu-ancestor>a {
+    color: #FA8079;
+}
+
+.main-navigation a:hover, .main-navigation a:focus { color: #FA8079; }
+.main-navigation li:hover > a, .main-navigation li.focus > a { color: #FA8079; }
+
+/*----------------------Carrousel-------------------------*/
+
+.banner .banner-text .text {
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    text-transform: none !important;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 0.1px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 9px 5px rgba(0,0,0,.2),
+    0.5px 7px 6px rgba(0, 0, 0, 0.493),
+    0 10px 10px rgba(0, 0, 0, 0.589),
+    0 20px 20px rgba(0, 0, 0, 0.432);
+}
+.banner .banner-text .text .title {
+    color: #fff;
+    font-size: 66px;
+    line-height: 66px;
+    font-family: 'Niconne', cursive;
+    text-transform: none;
+    font-weight: normal;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.banner .banner-text .text .btn {
+    border: 2px solid #FA8079;
+    background: #FA8079;
+    color: #fff;
+}
+
+.banner .banner-text .text .btn:hover {
+    background: transparent;
+    color: #fff;
+}
+
+

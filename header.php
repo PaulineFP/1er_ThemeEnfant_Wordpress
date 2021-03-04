@@ -16,7 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
@@ -41,13 +42,13 @@ function my_plugin_add_stylesheet() {
                     } ?>
                     <div class="text-logo site-social row">
                         <div class="L-5 float-l">
-                        <?php if ( is_front_page() ) : ?>
-                            <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                    </div>
-                            <!--Social link -->
+                            <?php if ( is_front_page() ) : ?>
+                                <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        </div>
+                        <!--Social link -->
                         <div class="column-2">
                             <?php do_action( 'bakes_and_cakes_footer_top' ); ?>
-                    </div>
+                         </div>
                             <!---->
                         <?php else : ?>
                             <p class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
