@@ -69,22 +69,23 @@ function my_plugin_add_stylesheet() {
         </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
 
-    <?php $enable_slider    = get_theme_mod('bakes_and_cakes_ed_slider');
-    $enabled_sections = bakes_and_cakes_get_sections();
-    $ed_breadcrumbs   = get_theme_mod('bakes_and_cakes_ed_breadcrumb');
+<?php $enable_slider    = get_theme_mod('bakes_and_cakes_ed_slider');
+$enabled_sections = bakes_and_cakes_get_sections();
+$ed_breadcrumbs   = get_theme_mod('bakes_and_cakes_ed_breadcrumb');
 
-    if( (is_front_page() || is_page_template('template-home.php')) && $enable_slider ) {
+if( (is_front_page() || is_page_template('template-home.php')) && $enable_slider ) {
 
-        do_action('bakes_and_cakes_slider');
+    do_action('bakes_and_cakes_slider');
 
-    }
-    echo '<div id="acc-content">'; // added for accessibility purpose
+}
+echo '<div id="acc-content">'; // added for accessibility purpose
 
-    if( is_home() || ! $enabled_sections || ! ( is_front_page()  || is_page_template( 'template-home.php' ) ) ){
+if( is_home() || ! $enabled_sections || ! ( is_front_page()  || is_page_template( 'template-home.php' ) ) ){
 
-        echo '<div class="container">';
+    echo '<div class="container">';
 
-        echo '<div id="content" class="site-content">';
+    echo '<div id="content" class="site-content">';
 
-        if($ed_breadcrumbs){ do_action('bakes_and_cakes_breadcrumbs'); }
-    } ?>
+    if($ed_breadcrumbs){ do_action('bakes_and_cakes_breadcrumbs'); }
+}
+?>
