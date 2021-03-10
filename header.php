@@ -48,7 +48,6 @@ function my_plugin_add_stylesheet() {
                         </div>
                         <!--Social link -->
                         <div class="column-2">
-<!--                            --><?php //do_action( 'bakes_and_cakes_footer_top' ); ?>
                             <?php
                             if (is_active_sidebar('footer-first')) {
                                 dynamic_sidebar('footer-first');
