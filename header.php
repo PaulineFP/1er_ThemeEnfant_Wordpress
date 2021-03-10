@@ -47,7 +47,7 @@ function my_plugin_add_stylesheet() {
                                 <h1 class="site-title" itemprop="name"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                         </div>
                         <!--Social link -->
-                        <div class="column-2">
+                        <div class="column-2 ">
                             <?php
                             if (is_active_sidebar('footer-first')) {
                                 dynamic_sidebar('footer-first');

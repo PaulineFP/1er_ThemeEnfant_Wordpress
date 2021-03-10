@@ -31,10 +31,9 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
         <?php
     }
 
-    if (is_active_sidebar('google-map')) {
-        echo '<div class="map">';
-        dynamic_sidebar('google-map');
-        echo '</div>';
+    if (is_active_sidebar('custom_widget')) {
+        dynamic_sidebar('custom_widget');
+
     }
 
 }else {

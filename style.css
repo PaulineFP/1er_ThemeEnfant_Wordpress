@@ -25,7 +25,9 @@ Template: bakes-and-cakes
     color:  #FA8079;
 }
 /*-----Social------*/
-.widget-title { display: none}
+
+section#bakes_and_cakes_social_links-3 h2.widget-title { display: none}
+
 .site-social .footer-t { margin: 0 0 30px }
 .site-social .widget ul {
     margin: 0;

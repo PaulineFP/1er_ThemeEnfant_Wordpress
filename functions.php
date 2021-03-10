@@ -113,3 +113,64 @@ if (!function_exists('bakes_and_cakes_setup')):
     }
 endif;
 add_action('after_setup_theme', 'bakes_and_cakes_setup');
+
+
+/*-------------------------------*/
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function bakes_and_cakes_widgets_custom_init() {
+    register_sidebar(array(
+        'name' => esc_html__('Right Sidebar', 'bakes-and-cakes'),
+        'id' => 'right-sidebar',
+        'description' => '',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Google Map Widget', 'bakes-and-cakes'),
+        'id' => 'google-map',
+        'description' => __( 'Widget for Google map section( Use Text widget for Google Map ).','bakes-and-cakes'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => 'custom_widget',
+        'id' => 'custom-first',
+        'description' => '',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="hidden">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Footer Second', 'bakes-and-cakes'),
+        'id' => 'footer-second',
+        'description' => __( 'Here you can use text widget to display Contact Form.','bakes-and-cakes'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => esc_html__('Footer Third', 'bakes-and-cakes'),
+        'id' => 'footer-third',
+        'description' => '',
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'bakes_and_cakes_widgets_custom_init');
