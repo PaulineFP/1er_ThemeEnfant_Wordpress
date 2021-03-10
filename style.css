@@ -99,6 +99,13 @@ Template: bakes-and-cakes
 /*-----Footer----*/
 /*contact*/
 
+.site-footer .widget.widget_contact_form .form-holder {
+    background: #fff;
+    margin: -145px 40px 0;
+    padding: 47px 30px 20px;
+    position: relative;
+}
+
 .site-footer .widget.widget_contact_form {
     /*width: 50%;*/
 }

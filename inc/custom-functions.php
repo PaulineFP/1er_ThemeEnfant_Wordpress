@@ -452,6 +452,7 @@ if( ! function_exists( 'bakes_and_cakes_footer_top' ) ) :
                     </div>
                     <div class="col center">
                         <section class="widget widget_contact_form">
+
                             <?php
                             if (is_active_sidebar('footer-second')) { ?>
                                 <div class="form-holder">
