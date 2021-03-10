@@ -16,7 +16,9 @@ if( is_home() || ! $enabled_sections || ! ( is_front_page()  || is_page_template
 
     <div class="container">
 
-        <?php do_action( 'bakes_and_cakes_footer' ); ?>
+        <?php
+        do_action( 'bakes_and_cakes_footer_top' );
+        do_action( 'bakes_and_cakes_footer' ); ?>
 
     </div>
 

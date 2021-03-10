@@ -67,12 +67,6 @@ if (!function_exists('bakes_and_cakes_setup')):
             'header-text' => array( 'site-title', 'site-description' ),
         ) );
 
-
-        // This theme uses wp_nav_menu() in one location.
-        register_nav_menus(array(
-            'primary' => esc_html__('Primary', 'bakes-and-cakes'),
-        ));
-
         /*
                 * Switch default core markup for search form, comment form, and comments
                 * to output valid HTML5.

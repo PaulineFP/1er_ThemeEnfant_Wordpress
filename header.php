@@ -35,6 +35,7 @@ function my_plugin_add_stylesheet() {
     <header id="masthead" class="site-header" role="banner" itemscope itemtype="https://schema.org/WPHeader">
         <div class="header-t">
             <div class="container">
+                <?php wp_nav_menu( array( 'theme_location' => 'third', 'menu_id' => 'third-menu' ) ); ?>
                 <div class="site-branding" itemscope itemtype="https://schema.org/Organization">
                     <?php
                     if( function_exists( 'has_custom_logo' ) && has_custom_logo() ){
@@ -47,7 +48,11 @@ function my_plugin_add_stylesheet() {
                         </div>
                         <!--Social link -->
                         <div class="column-2">
-                            <?php do_action( 'bakes_and_cakes_footer_top' ); ?>
+<!--                            --><?php //do_action( 'bakes_and_cakes_footer_top' ); ?>
+                            <?php
+                            if (is_active_sidebar('footer-first')) {
+                                dynamic_sidebar('footer-first');
+                            } ?>
                          </div>
                             <!---->
                         <?php else : ?>
