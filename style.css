@@ -3,60 +3,126 @@ Theme Name: Mon theme enfant
 Template: bakes-and-cakes
  */
 
+/* Theme colors:
+    - title : #CCDDFF;
+    - clic : #FA8079;
+    - footer : #5c595c;
+ */
+
 /*-----Width----*/
-.L-max { width: 100% }
-.L-2 { width: 90% }
-.L-3 { width: 80% }
-.L-4 { width: 70% }
-.L-5 { width: 60% }
-.L-6 { width: 50% }
-.L-7 { width: 40% }
-.L-8 { width: 30% }
-.L-9 { width: 20% }
-.L-10 { width: 10% }
+.L-max {
+    width: 100%
+}
+
+.L-2 {
+    width: 90%
+}
+
+.L-3 {
+    width: 80%
+}
+
+.L-4 {
+    width: 70%
+}
+
+.L-5 {
+    width: 60%
+}
+
+.L-6 {
+    width: 50%
+}
+
+.L-7 {
+    width: 40%
+}
+
+.L-8 {
+    width: 30%
+}
+
+.L-9 {
+    width: 20%
+}
+
+.L-10 {
+    width: 10%
+}
 
 /*----float---*/
-.float-l { float: left }
-
-/*------------------------Header------------------------*/
-.site-branding { text-align: initial }
-.site-branding .site-title { font-size: 50px }
-.site-branding .site-title a {
-    color:  #FA8079;
+.float-l {
+    float: left
 }
-/*-----Social------*/
 
-section#bakes_and_cakes_social_links-3 h2.widget-title { display: none}
+/*----------------------------------------GENERAL---------------------------------------------------------------------*/
+/*-----Header-----*/
+.site-branding {
+    text-align: initial
+}
 
-.site-social .footer-t { margin: 0 0 30px }
+.site-branding .site-title {
+    font-size: 50px
+}
+
+.site-branding .site-title a {
+    color: #FA8079;
+}
+
+/*---Social item---*/
+
+section#bakes_and_cakes_social_links-3 h2.widget-title {
+    display: none
+}
+
+.site-footer .widget .social-networks li a:hover {
+    color: #FA8079;
+}
+
+.site-social .footer-t {
+    margin: 0 0 30px
+}
+
 .site-social .widget ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .site-social .widget .social-networks {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 20px;
 }
+
 .site-social .widget .social-networks li {
     float: right;
     margin-right: 19px;
 }
-.site-social .widget a { color: #FA8079}
-.svg-inline--fa { margin-top: 1em }
 
-/*navbar*/
-.main-navigation .current_page_item>a, .main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current-menu-ancestor>a {
+.site-social .widget a {
+    color: #FA8079
+}
+
+.svg-inline--fa {
+    margin-top: 1em
+}
+
+/*---navbar---*/
+.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current-menu-ancestor > a {
     color: #FA8079;
 }
 
-.main-navigation a:hover, .main-navigation a:focus { color: #FA8079; }
-.main-navigation li:hover > a, .main-navigation li.focus > a { color: #FA8079; }
+.main-navigation a:hover, .main-navigation a:focus {
+    color: #FA8079;
+}
 
-/*----------------------Carrousel-------------------------*/
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+    color: #FA8079;
+}
 
+/*---Carrousel---*/
 .banner .banner-text .text {
     color: #fff;
     font-family: 'Assistant', sans-serif;
@@ -66,14 +132,15 @@ section#bakes_and_cakes_social_links-3 h2.widget-title { display: none}
     0 0.1px 0 #bbb,
     0 4px 0 #b9b9b9,
     0 5px 0 #aaa,
-    0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 9px 5px rgba(0,0,0,.2),
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 9px 5px rgba(0, 0, 0, .2),
     0.5px 7px 6px rgba(0, 0, 0, 0.493),
     0 10px 10px rgba(0, 0, 0, 0.589),
     0 20px 20px rgba(0, 0, 0, 0.432);
 }
+
 .banner .banner-text .text .title {
     color: #fff;
     font-size: 66px;
@@ -95,129 +162,36 @@ section#bakes_and_cakes_social_links-3 h2.widget-title { display: none}
     background: transparent;
     color: #fff;
 }
-/*title : #CCDDFF */
 
+/*------Footer-------*/
 
-/*-----Footer----*/
-/*contact*/
-
+/*---contact---*/
 .site-footer .widget.widget_contact_form .form-holder {
     background: #fff;
     margin: -145px 40px 0;
     padding: 47px 30px 20px;
     position: relative;
-}
-
-.site-footer .widget.widget_contact_form {
-    /*width: 50%;*/
-}
-
-
-.site-footer .widget.widget_contact_form .form-holder {
-    background: #fff;
-    margin: -145px 40px 0;
-    padding: 47px 30px 20px;
-    position: relative;
+    border: 1px solide black;
 }
 
 .site-footer .widget.widget_contact_form .form-holder .main-title,
 .site-footer .widget.widget_contact_form .form-holder .widget-title {
-    font-size: 60px;
-    font-family: 'Niconne', cursive;
-    line-height: 62px;
-    font-weight: normal;
-    color: #f6a8c6;
-    margin: 0 0 10px;
-    text-align: center;
+    color: #CCDDFF;
 }
 
-.site-footer .widget.widget_contact_form .form-holder .sub-title {
-    color: #555;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 0 30px;
-}
-
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="text"],
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="email"],
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="url"],
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="tel"],
-.site-footer .widget .wpcf7-form input[type="text"],
-.site-footer .widget .wpcf7-form input[type="email"],
-.site-footer .widget .wpcf7-form input[type="url"],
-.site-footer .widget .wpcf7-form input[type="tel"] {
-    border: 1px solid #dddcda;
-    width: 100%;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 0;
-    padding: 18px 22px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.site-footer .widget.widget_contact_form .form-holder .contact-form textarea,
-.site-footer .widget .wpcf7-form textarea {
-    border: 1px solid #dddcda;
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 0;
-    padding: 18px 22px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    resize: none;
-}
-
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"],
-.site-footer .widget .wpcf7-form input[type="submit"] {
-    border: 2px solid #555;
-    color: #555;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    line-height: 20px;
-    padding: 11px 37px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
-    background: none;
-    box-shadow: none;
-    text-shadow: none;
-    border-radius: 0;
+.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"], .site-footer
+.widget .wpcf7-form input[type="submit"] {
+    border: 2px solid #FA8079;
+    color: #FA8079;
 }
 
 .site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"]:hover,
 .site-footer .widget .wpcf7-form input[type="submit"]:hover {
-    background: #555;
-    color: #fff;
+    background: #FA8079;
 }
 
-.site-footer .widget.widget_contact_form .form-holder .contact-form p:last-child {
-    text-align: center;
+.site-footer .site-info {
+    display: none;
 }
 
-.site-footer .widget ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.site-footer .widget ul li {
-    /*overflow: hidden;*/
-    margin: 0 0 15px;
-}
-
-.site-footer .widget ul li:after{
-    display: block;
-    clear: both;
-    content: '';
-}
+/*--------------------------------------------------------------------------------------------------------------------*/
