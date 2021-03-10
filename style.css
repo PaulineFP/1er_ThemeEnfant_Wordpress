@@ -6,6 +6,7 @@ Template: bakes-and-cakes
 /* Theme colors:
     - title : #CCDDFF;
     - clic : #FA8079;
+    - background: #f7f6f4;
     - footer : #5c595c;
  */
 
@@ -122,6 +123,40 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     color: #FA8079;
 }
 
+/*------Footer-------*/
+
+/*---contact---*/
+.site-footer .widget.widget_contact_form .form-holder {
+    background: #fff;
+    margin: -145px 40px 0;
+    padding: 47px 30px 20px;
+    position: relative;
+    border: 1px solide black;
+}
+
+.site-footer .widget.widget_contact_form .form-holder .main-title,
+.site-footer .widget.widget_contact_form .form-holder .widget-title {
+    color: #CCDDFF;
+}
+
+.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"], .site-footer
+.widget .wpcf7-form input[type="submit"] {
+    border: 2px solid #FA8079;
+    color: #FA8079;
+}
+
+.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"]:hover,
+.site-footer .widget .wpcf7-form input[type="submit"]:hover {
+    background: #FA8079;
+}
+
+.site-footer .site-info {
+    display: none;
+}
+
+/*----------------------------------------------Home Page------------------------------------------------------*/
+
+
 /*---Carrousel---*/
 .banner .banner-text .text {
     color: #fff;
@@ -163,35 +198,51 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     color: #fff;
 }
 
-/*------Footer-------*/
-
-/*---contact---*/
-.site-footer .widget.widget_contact_form .form-holder {
-    background: #fff;
-    margin: -145px 40px 0;
-    padding: 47px 30px 20px;
-    position: relative;
-    border: 1px solide black;
-}
-
-.site-footer .widget.widget_contact_form .form-holder .main-title,
-.site-footer .widget.widget_contact_form .form-holder .widget-title {
+/*------Section About----*/
+.intro .columns-2 .heading .main-title {
     color: #CCDDFF;
 }
 
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"], .site-footer
-.widget .wpcf7-form input[type="submit"] {
+.intro .btn-holder a {
+    color: #FA8079;
     border: 2px solid #FA8079;
+    background: #fff;
+}
+
+.intro .btn-holder a:hover {
+    background: #FA8079;
+    color: #fff;
+}
+
+.intro {
+    padding: 89px 0 0;
+}
+
+/*-----Section news-----*/
+.blog-section {
+    background: #f7f6f4;
+    padding: 70px 0;
+}
+
+.blog-section .header .main-title {
+    color: #CCDDFF;
+}
+
+.blog-section .post .text-holder {
+    padding: 29px;
+    margin-bottom: 5em;
+    background: #fff;
+    height: 200px;
+}
+
+a {
     color: #FA8079;
 }
 
-.site-footer .widget.widget_contact_form .form-holder .contact-form input[type="submit"]:hover,
-.site-footer .widget .wpcf7-form input[type="submit"]:hover {
-    background: #FA8079;
+a:hover {
+    color: #FA8079;
 }
 
-.site-footer .site-info {
-    display: none;
+.blog-section .post .entry-title a:hover {
+    color: #FA8079;
 }
-
-/*--------------------------------------------------------------------------------------------------------------------*/
