@@ -101,13 +101,13 @@ if (!function_exists('bakes_and_cakes_setup')):
 
         //Custom Image Sizes
         add_image_size('bakes-and-cakes-post-thumb', 60, 60, true);
-        add_image_size('bakes-and-cakes-about-thumb', 600, 400, true);
+        add_image_size('bakes-and-cakes-about-thumb', 500, 500, true);
         add_image_size('bakes-and-cakes-product-thumb', 235, 235, true);
         add_image_size('bakes-and-cakes-slider', 1420, 550, true);
         add_image_size('bakes-and-cakes-image-full', 1139, 498, true);
         add_image_size('bakes-and-cakes-image', 750, 400, true);
         add_image_size('bakes-and-cakes-staff-thumb', 487, 527, true);
-        add_image_size('bakes-and-cakes-blog-thumb', 280, 255, true);
+        add_image_size('bakes-and-cakes-blog-thumb', 400, 340, true);
         add_image_size('bakes-and-cakes-events-thumb', 255, 255, true);
         add_image_size('bakes-and-cakes-schema', 600, 60, true);
     }

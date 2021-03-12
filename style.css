@@ -132,6 +132,9 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     padding: 47px 30px 20px;
     position: relative;
     border: 1px solide black;
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
 }
 
 .site-footer .widget.widget_contact_form .form-holder .main-title,
@@ -199,6 +202,14 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
 }
 
 /*------Section About----*/
+
+.intro .image-holder img {
+    width: 500px;
+    height: 500px;
+    margin-left: 8em;
+}
+
+
 .intro .columns-2 .heading .main-title {
     color: #CCDDFF;
 }
@@ -228,11 +239,24 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     color: #CCDDFF;
 }
 
+
+
+.blog-section .post .post-thumbnail img {
+    height: 340px;
+
+}
+
+
+
 .blog-section .post .text-holder {
     padding: 29px;
+    margin-top: 20%;
     margin-bottom: 5em;
     background: #fff;
     height: 200px;
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
 }
 
 a {
@@ -246,3 +270,118 @@ a:hover {
 .blog-section .post .entry-title a:hover {
     color: #FA8079;
 }
+/*-----------------------------------Article Page----------------------------------------------------------*/
+#crumbs a {
+    color: #FA8079;
+}
+
+.container {
+    max-width: 85%;
+}
+
+/*widget right*/
+#secondary {
+    width: 20%;
+    float: right;
+    padding-right: 0;
+}
+
+#secondary .widget ul {
+    padding: 17px 15px;
+}
+
+#secondary .widget ul li a:hover {
+    color: #FA8079;
+}
+
+/*article*/
+.content-area {
+    float: left;
+    width: 78%;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+}
+
+.content-area .post .entry-header .entry-title, .content-area .page .entry-header .entry-title {
+    font-size: 65px;
+    text-align: center;
+    color: #CCDDFF;
+    font-family: "Niconne", cursive;
+    line-height: 1;
+}
+
+.content-area .post .entry-header .entry-meta .posted-on a:before {
+    width: 20px;
+    background: url('images/calendrier-24.png') center center no-repeat;
+}
+
+.content-area .post .entry-header .entry-meta .byline a:before {
+    width: 20px;
+    background: url('images/utilisateur-24.png') center center no-repeat;
+}
+
+.content-area .post .entry-header .entry-meta .tags:before {
+    width: 20px;
+    background: url('images/etiquette-20.png') center center no-repeat;
+}
+
+.comment-form input[type="submit"] {
+    background: #fff;
+    border: 2px solid #FA8079;
+    color: #FA8079;
+}
+.comment-form input[type="submit"]:hover {
+    background: #FA8079;
+    color: #fff;
+}
+
+.comments-title, .comment-reply-title {
+    color: #CCDDFF;
+}
+
+#primary .post .entry-content ul, #primary .page .entry-content ul {
+    margin-left: 7em;
+}
+/*---------------------------------------------------Page-------------------------------------------------------------*/
+.wp-block-image:not(.is-style-rounded) img {
+    width: 100%;
+    height: 600px;
+}
+
+.wp-block-latest-posts.columns-3 li {
+    text-align: center;
+}
+
+.content-area .post .entry-content blockquote, .content-area .page .entry-content blockquote {
+    font-size: 20px;
+    height: 40px;
+}
+.page-title {
+    font-size: 80px;
+    font-family: "Niconne", cursive;
+    line-height: 2;
+    color: #CCDDFF;
+    text-align: center;
+}
+.site-main {
+    background: #fff;
+}
+
+/*--------------------------------------A la une ----------------------------------------------------------------------*/
+.content-area .post .entry-header .entry-title a, .content-area .page .entry-header .entry-title a {
+    color: #FA8079;
+}
+.content-area .post .entry-header .entry-title a:hover, .content-area .page .entry-header .entry-title a:hover{
+    color: #FA8079;
+    text-decoration: underline;
+}
+.pagination .current {
+    background: #FA8079 !important;
+}
+.pagination a:hover {
+    color:  #FA8079;
+}
+
