@@ -489,6 +489,14 @@ a:hover {
     margin-left: 7em;
 }
 
+@media screen and (max-width: 350px){
+    .comment-form input[type="submit"]:hover {
+        width: 100%;
+    }
+    .comments-area {
+        padding: 0 13px 33px;
+    }
+}
 /*---------------------------------------------------Page-------------------------------------------------------------*/
 .wp-block-image:not(.is-style-rounded) img {
     width: 100%;
