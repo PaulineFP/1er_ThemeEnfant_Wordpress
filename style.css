@@ -523,6 +523,24 @@ a:hover {
 .site-main {
     background: #fff;
 }
+/*media*/
+
+@media screen and (max-width: 1172px) {
+    .wp-block-image:not(.is-style-rounded) img {
+        height: auto;
+    }
+    #primary .post .entry-content ul, #primary .page .entry-content ul {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 455px) {
+    .page-title {
+        font-size: 50px;
+    }
+    .content-area .post .entry-header .entry-title, .content-area .page .entry-header .entry-title {
+        font-size: 45px;
+    }
+}
 
 /*--------------------------------------A la une ----------------------------------------------------------------------*/
 .content-area .post .entry-header .entry-title a, .content-area .page .entry-header .entry-title a {
