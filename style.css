@@ -132,9 +132,9 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     padding: 47px 30px 20px;
     position: relative;
     border: 1px solide black;
-    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
 }
 
 .site-footer .widget.widget_contact_form .form-holder .main-title,
@@ -159,12 +159,31 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
 
 /*----------------------------------------------Home Page------------------------------------------------------*/
 
-
 /*---Carrousel---*/
+.owl-carousel .owl-item img {
+    filter: brightness(0.8);
+}
+
 .banner .banner-text .text {
     color: #fff;
     font-family: 'Assistant', sans-serif;
     text-transform: none !important;
+}
+
+.banner .banner-text .text p {
+    text-shadow: 3px 0.5px 2px rgb(0 0 0);
+    font-weight: bold;
+}
+
+.banner .banner-text .text .title {
+    color: #fff;
+    font-size: 66px;
+    line-height: 66px;
+    font-family: 'Niconne', cursive;
+    text-transform: none;
+    font-weight: normal;
+    margin: 0 0 15px;
+    display: block;
     text-shadow: 0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
     0 0.1px 0 #bbb,
@@ -179,26 +198,8 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     0 20px 20px rgba(0, 0, 0, 0.432);
 }
 
-.banner .banner-text .text .title {
-    color: #fff;
-    font-size: 66px;
-    line-height: 66px;
-    font-family: 'Niconne', cursive;
-    text-transform: none;
-    font-weight: normal;
-    margin: 0 0 15px;
-    display: block;
-}
-
 .banner .banner-text .text .btn {
-    border: 2px solid #FA8079;
-    background: #FA8079;
-    color: #fff;
-}
-
-.banner .banner-text .text .btn:hover {
-    background: transparent;
-    color: #fff;
+    display: none;
 }
 
 /*------Section About----*/
@@ -208,7 +209,6 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     height: 500px;
     margin-left: 8em;
 }
-
 
 .intro .columns-2 .heading .main-title {
     color: #CCDDFF;
@@ -239,14 +239,9 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     color: #CCDDFF;
 }
 
-
-
 .blog-section .post .post-thumbnail img {
     height: 340px;
-
 }
-
-
 
 .blog-section .post .text-holder {
     padding: 29px;
@@ -254,9 +249,9 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     margin-bottom: 5em;
     background: #fff;
     height: 200px;
-    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
 }
 
 a {
@@ -270,6 +265,145 @@ a:hover {
 .blog-section .post .entry-title a:hover {
     color: #FA8079;
 }
+
+/*--------------MEDIA-----------------------*/
+
+@media screen and (max-width: 1382px) {
+    .intro {
+        padding: 89px auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .intro .image-holder img {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .blog-section .post .post-thumbnail {
+        height: 135px;
+    }
+
+    .blog-section .post .post-thumbnail img {
+        height: 200px;
+        margin: 0;
+    }
+
+    .site-footer .widget.widget_contact_form .form-holder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .site-branding {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .blog-section .post .text-holder {
+        height: 150px;
+    }
+
+    .blog-section .post .post-thumbnail img {
+        height: 340px;
+    }
+
+    .blog-section .post .post-thumbnail {
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner .banner-text {
+        position: relative;
+        background: #fa8079
+    }
+
+    .banner .banner-text .text .title, .banner .banner-text .text p {
+        text-shadow: none;
+    }
+
+    .intro .image-holder img {
+        width: 100%;
+    }
+
+    .blog-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .blog-section .post .post-thumbnail {
+        height: 225px;
+    }
+
+    .entry-header {
+        margin: 2em 0;
+    }
+
+    .site-footer .three-cols {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .blog-section .post .post-thumbnail img {
+        height: 280px;
+    }
+
+    .entry-header {
+        margin: 0;
+    }
+    .site-branding {
+        display: flex;
+    }
+    .site-branding .site-title a {
+        color: #FA8079;
+        font-size: 30px;
+    }
+
+    .site-footer .three-cols {
+        flex-direction: column-reverse;
+    }
+    .site-footer .widget.widget_contact_form .form-holder {
+        background: #fff;
+        margin:  0;
+        padding: 47px 30px 20px;
+    }
+    .site-footer .widget.widget_contact_form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        width: 100%;
+    }
+    .site-header .header-t .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .site-footer .widget .social-networks {
+        display: none;
+    }
+    .site-footer .widget.widget_contact_form .form-holder{
+        padding: 10px;
+    }
+    .site-footer .widget.widget_contact_form .form-holder .contact-form input[type="text"], .site-footer .widget.widget_contact_form .form-holder .contact-form input[type="email"], .site-footer .widget.widget_contact_form .form-holder .contact-form input[type="url"], .site-footer .widget.widget_contact_form .form-holder .contact-form input[type="tel"], .site-footer .widget .wpcf7-form input[type="text"], .site-footer .widget .wpcf7-form input[type="email"], .site-footer .widget .wpcf7-form input[type="url"], .site-footer .widget .wpcf7-form input[type="tel"], .site-footer .widget.widget_contact_form .form-holder .contact-form textarea, .site-footer .widget .wpcf7-form textarea {
+        font-size: 12px;
+    }
+}
+
+
 /*-----------------------------------Article Page----------------------------------------------------------*/
 #crumbs a {
     color: #FA8079;
@@ -300,9 +434,9 @@ a:hover {
     width: 78%;
     padding-left: 0;
     padding-right: 0;
-    -webkit-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    -moz-box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
-    box-shadow: -4px 5px 10px 1px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
+    box-shadow: -4px 5px 10px 1px rgba(0, 0, 0, 0.23);
 }
 
 .content-area .post .entry-header .entry-title, .content-area .page .entry-header .entry-title {
@@ -333,6 +467,7 @@ a:hover {
     border: 2px solid #FA8079;
     color: #FA8079;
 }
+
 .comment-form input[type="submit"]:hover {
     background: #FA8079;
     color: #fff;
@@ -345,6 +480,7 @@ a:hover {
 #primary .post .entry-content ul, #primary .page .entry-content ul {
     margin-left: 7em;
 }
+
 /*---------------------------------------------------Page-------------------------------------------------------------*/
 .wp-block-image:not(.is-style-rounded) img {
     width: 100%;
@@ -359,6 +495,7 @@ a:hover {
     font-size: 20px;
     height: 40px;
 }
+
 .page-title {
     font-size: 80px;
     font-family: "Niconne", cursive;
@@ -366,6 +503,7 @@ a:hover {
     color: #CCDDFF;
     text-align: center;
 }
+
 .site-main {
     background: #fff;
 }
@@ -374,14 +512,16 @@ a:hover {
 .content-area .post .entry-header .entry-title a, .content-area .page .entry-header .entry-title a {
     color: #FA8079;
 }
-.content-area .post .entry-header .entry-title a:hover, .content-area .page .entry-header .entry-title a:hover{
+
+.content-area .post .entry-header .entry-title a:hover, .content-area .page .entry-header .entry-title a:hover {
     color: #FA8079;
     text-decoration: underline;
 }
+
 .pagination .current {
     background: #FA8079 !important;
 }
-.pagination a:hover {
-    color:  #FA8079;
-}
 
+.pagination a:hover {
+    color: #FA8079;
+}
