@@ -210,6 +210,10 @@ section#bakes_and_cakes_social_links-3 h2.widget-title {
     margin-left: 8em;
 }
 
+.content-area .post .readmore:hover {
+    color: #FA8079;
+}
+
 .intro .columns-2 .heading .main-title {
     color: #CCDDFF;
 }
@@ -489,14 +493,16 @@ a:hover {
     margin-left: 7em;
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
     .comment-form input[type="submit"]:hover {
         width: 100%;
     }
+
     .comments-area {
         padding: 0 13px 33px;
     }
 }
+
 /*---------------------------------------------------Page-------------------------------------------------------------*/
 .wp-block-image:not(.is-style-rounded) img {
     width: 100%;
@@ -523,20 +529,24 @@ a:hover {
 .site-main {
     background: #fff;
 }
+
 /*media*/
 
 @media screen and (max-width: 1172px) {
     .wp-block-image:not(.is-style-rounded) img {
         height: auto;
     }
+
     #primary .post .entry-content ul, #primary .page .entry-content ul {
         margin-left: 0;
     }
 }
+
 @media screen and (max-width: 455px) {
     .page-title {
         font-size: 50px;
     }
+
     .content-area .post .entry-header .entry-title, .content-area .page .entry-header .entry-title {
         font-size: 45px;
     }
